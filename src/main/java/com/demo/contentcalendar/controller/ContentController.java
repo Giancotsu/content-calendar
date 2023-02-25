@@ -2,6 +2,7 @@ package com.demo.contentcalendar.controller;
 
 import com.demo.contentcalendar.model.Content;
 import com.demo.contentcalendar.repository.ContentCollectionRepository;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -35,14 +36,14 @@ public class ContentController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping()
-    public void saveContent(@RequestBody Content content){
+    public void saveContent(@Valid @RequestBody Content content){
 
         repository.save(content);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping()
-    public void updateContent(@RequestBody Content content){
+    public void updateContent(@Valid @RequestBody Content content){
 
         if(repository.existsById(content.id())){
             repository.save(content);

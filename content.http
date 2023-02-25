@@ -10,11 +10,26 @@ Content-Type: application/json
 
 {
   "id": 2,
-  "title": "",
+  "title": "My second post",
   "desc": "My Second blog post",
   "status": "IDEA",
   "contentType": "ARTICLE",
-  "dateCreated": "2023-02-13T10:25:02.838496",
+  "dateCreated": "25-02-2023T13:26",
+  "dateUpdated": null,
+  "url": ""
+}
+
+### Test Validation
+POST http://localhost:8001/api/v1/content
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "",
+  "desc": "My third blog post",
+  "status": "",
+  "contentType": "ARTICLE",
+  "dateCreated": "25-02-2023T13:26",
   "dateUpdated": null,
   "url": ""
 }
