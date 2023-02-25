@@ -5,6 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.text.SimpleDateFormat;
@@ -17,6 +18,8 @@ public record Content(
 
         @NotBlank(message = "You must enter a title")
         String title,
+
+        @Column(value = "description")
         String desc,
 
         @NotNull(message = "You must choose a status")
