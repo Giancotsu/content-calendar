@@ -3,6 +3,7 @@ package com.demo.contentcalendar.controller;
 import com.demo.contentcalendar.model.Content;
 import com.demo.contentcalendar.repository.ContentCollectionRepository;
 import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -10,9 +11,9 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 import java.util.Optional;
 
-//@Deprecated(since = "24/02/2023")
+@Deprecated(since = "24/02/2023")
 @CrossOrigin
-@RestController
+@RestController("ContentControllerDeprecated")
 @RequestMapping("/api/v1/content")
 public class ContentController {
 

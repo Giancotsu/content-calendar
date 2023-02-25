@@ -35,10 +35,10 @@ public class ContentCollectionRepository {
     @PostConstruct
     private void init() {
         Content content = new Content(1,
-                "My First Blog Post",
-                "My first blog post",
+                "Study new programming language",
+                "Study python",
                 Status.IDEA,
-                Type.ARTICLE,
+                Type.STUDY,
                 LocalDateTime.now(),
                 null,
                 "");
