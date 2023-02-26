@@ -56,9 +56,10 @@ public class ContentController {
 
         if(repository.existsById(content.id())){
             throw new ResponseStatusException(HttpStatus.METHOD_NOT_ALLOWED, "Content already exists.");
-        }else{
-            repository.save(content);
         }
+
+        repository.save(content);
+
 
     }
 

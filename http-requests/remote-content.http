@@ -1,0 +1,20 @@
+###
+POST https://content-calendar-prod.up.railway.app/api/v2/content
+Content-Type: application/json
+
+{
+  "id": null,
+  "title": "Complete content calendar app",
+  "desc": "Completing content calendar application",
+  "status": "IN_PROGRESS",
+  "contentType": "CODE",
+  "dateCreated": "25-02-2023T16:10",
+  "dateUpdated": null,
+  "url": "https://github.com/Giancotsu/content-calendar"
+}
+
+### Delete by id
+DELETE https://content-calendar-prod.up.railway.app/api/v2/content/2
+
+### Delete all contents
+DELETE https://content-calendar-prod.up.railway.app/api/v2/content
