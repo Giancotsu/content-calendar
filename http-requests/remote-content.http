@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ### Delete by id
-DELETE https://content-calendar-prod.up.railway.app/api/v2/content/2
+DELETE https://content-calendar-prod.up.railway.app/api/v2/content/11
 
 ### Delete all contents
 DELETE https://content-calendar-prod.up.railway.app/api/v2/content

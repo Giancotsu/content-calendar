@@ -43,4 +43,6 @@ content calendar is a rest api application that allows clients to do simple CRUD
 
 ---
 
+Uploaded on https://railway.app/
+
 - [Homepage](https://content-calendar-prod.up.railway.app/ "Go to homepage")
