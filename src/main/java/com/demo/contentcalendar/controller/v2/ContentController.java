@@ -1,5 +1,6 @@
 package com.demo.contentcalendar.controller.v2;
 
+import com.demo.contentcalendar.config.DataLoader;
 import com.demo.contentcalendar.model.Content;
 import com.demo.contentcalendar.repository.ContentRepository;
 import jakarta.validation.Valid;
@@ -19,9 +20,16 @@ import java.util.Optional;
 public class ContentController {
 
     private final ContentRepository repository;
+    private final DataLoader dataLoader;
 
-    public ContentController(ContentRepository contentRepository) {
+    public ContentController(ContentRepository contentRepository, DataLoader dataLoader) {
         this.repository = contentRepository;
+        this.dataLoader = dataLoader;
+    }
+
+    @GetMapping("generate")
+    public void contentsGenerator() throws Exception{
+        dataLoader.run();
     }
 
     //Make a request and find all the pieces of the content in the system
@@ -72,5 +80,11 @@ public class ContentController {
         repository.deleteById(id);
     }
 
+    @ResponseStatus(HttpStatus.OK)
+    @DeleteMapping("")
+    public void deleteAllContents() {
+
+        repository.deleteAll();
+    }
 
 }

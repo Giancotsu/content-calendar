@@ -1,62 +1,52 @@
 [
   {
     "id": null,
-    "title": "Easily Implement UUIDs as Primary Keys in Spring Boot 3",
-    "desc": "In this tutorial you will learn how to use one of the new features in Jakarta EE 10 in a Spring Boot 3 application.",
+    "title": "Studying English",
+    "desc": "Studying present simple",
     "status": "COMPLETED",
-    "contentType": "CODE",
+    "contentType": "STUDY",
     "dateCreated": "25-02-2023T13:26",
     "dateUpdated": null,
-    "url": "https://www.danvega.dev/blog/2023/01/27/jakarta-ee-10-uuid/"
+    "url": ""
   },
   {
     "id": null,
-    "title": "Spring Boot JWT - How to Secure your REST APIs with Spring Security and Json Web Tokens",
-    "desc": "In this tutorial, you will learn how to secure REST APIs with Spring Security and Json Web Tokens.",
+    "title": "Learning noSql",
+    "desc": "Learning noSql with MongoDb",
     "status": "COMPLETED",
     "contentType": "CODE",
-    "dateCreated": "25-02-2023T13:26",
+    "dateCreated": "25-02-2023T14:30",
     "dateUpdated": null,
-    "url": "https://www.danvega.dev/blog/2022/09/06/spring-security-jwt/"
+    "url": ""
   },
   {
     "id": null,
-    "title": "GraphQL Spring Boot - Up and Running with Spring for GraphQL",
-    "desc": "In this tutorial you are going to learn how to get up and running with Spring for GraphQL.",
-    "status": "COMPLETED",
+    "title": "Creating new application",
+    "desc": "Creating new application and insert it on the portfolio",
+    "status": "IDEA",
     "contentType": "CODE",
-    "dateCreated": "25-02-2023T13:26",
+    "dateCreated": "25-02-2023T15:40",
     "dateUpdated": null,
-    "url": "https://www.danvega.dev/blog/2022/05/17/spring-for-graphql/"
+    "url": ""
   },
   {
     "id": null,
-    "title": "Can Chat GPT Build a Spring Boot Application",
-    "desc": "In this video, we'll investigate whether it is possible to use Chat GPT to write a Spring Boot application.",
-    "status": "COMPLETED",
+    "title": "Complete content calendar app",
+    "desc": "Completing content calendar application",
+    "status": "IN_PROGRESS",
     "contentType": "CODE",
-    "dateCreated": "25-02-2023T13:26",
+    "dateCreated": "25-02-2023T16:10",
     "dateUpdated": null,
-    "url": "https://youtu.be/CXbXoMIVpRg"
+    "url": "https://github.com/Giancotsu/content-calendar"
   },
   {
     "id": null,
-    "title": "Building Native Images in Java with GraalVM",
-    "desc": "In this tutorial, we will explore the exciting and powerful process of creating native executables in Java using GraalVM.",
-    "status": "COMPLETED",
-    "contentType": "CODE",
-    "dateCreated": "25-02-2023T13:26",
+    "title": "Learning new frontend technology",
+    "desc": "Learning angular",
+    "status": "IN_PROGRESS",
+    "contentType": "STUDY",
+    "dateCreated": "25-02-2023T17:00",
     "dateUpdated": null,
-    "url": "https://youtu.be/Rk4zfvVvRks"
-  },
-  {
-    "id": null,
-    "title": "My IntelliJ Setup",
-    "desc": "In this video, I am going to walk you through my IntelliJ IDEA Setup for 2023. \n",
-    "status": "COMPLETED",
-    "contentType": "CODE",
-    "dateCreated": "25-02-2023T13:26",
-    "dateUpdated": null,
-    "url": "https://youtu.be/g78is10FjF0"
+    "url": ""
   }
 ]
