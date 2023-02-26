@@ -54,13 +54,11 @@ public class ContentController {
     @PostMapping()
     public void saveContent(@Valid @RequestBody Content content) {
 
-        if(repository.existsById(content.id())){
+        if(content.id() == null){
+            repository.save(content);
+        }else{
             throw new ResponseStatusException(HttpStatus.METHOD_NOT_ALLOWED, "Content already exists.");
         }
-
-        repository.save(content);
-
-
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
